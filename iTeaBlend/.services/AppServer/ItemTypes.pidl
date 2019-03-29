@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pidl:description targetNamespace="urn:schemas-progress-com:bpm:appserverbinding:0001" serviceType="wsad:OEAppServerInvoke" xmlns:wsad="urn:schemas-progress-com:bpm:appserverbinding:0001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pidl="http://www.progress.com/caf/idl1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:java="http://www.progress.com/adapters/idl1.0/javatype">
+<pidl:types>
+</pidl:types>
+  <pidl:interface name="com.progress.openedge.pdt.bpminterfaces">
+    <pidl:operation name="ItemTypes..CreateItemType" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="ItemType_Code" req="false" type="java:String">
+    </pidl:input>
+      <pidl:input messageLabel="ItemType_Label" req="false" type="java:String">
+    </pidl:input>
+      <pidl:output messageLabel="res_status" req="false" type="java:Object">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="ItemTypes..DeleteItemType" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:String">
+    </pidl:input>
+      <pidl:output messageLabel="res_status" req="false" type="java:Object">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="ItemTypes..GetItemType" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:String">
+    </pidl:input>
+      <pidl:output messageLabel="res_status" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="getItemType" req="false" type="java:Object">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="ItemTypes..GetItemTypes" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:output messageLabel="res_status" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="getItemTypes" req="false" type="java:Object">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="ItemTypes..UpdateItemTypes" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:String">
+    </pidl:input>
+      <pidl:input messageLabel="ItemTypeSet" req="false" type="java:Object">
+    </pidl:input>
+      <pidl:output messageLabel="res_status" req="false" type="java:Object">
+    </pidl:output>
+    </pidl:operation>
+  </pidl:interface>
+  <pidl:binding name="com.progress.openedge.pdt.bpmbindings" interface="wsad:com.progress.openedge.pdt.bpminterfaces" type="urn:schemas-progress-com:bpm:appserverbinding:0001">
+<wsad:Operation isPersistent="false" useFullName="false" executionMode="11">
+  <wsad:Name>ItemTypes</wsad:Name>
+  <wsad:ProcPath/>
+  <wsad:ProPath/>
+  <wsad:ProcExt>cls</wsad:ProcExt>
+  <wsad:ProcDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="true" IsMappedToSubmit="false">
+    <wsad:Name>ItemTypes</wsad:Name>
+    <wsad:HelpString></wsad:HelpString>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>CreateItemType</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>CreateItemType</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>ItemType_Code</wsad:Name>
+          <wsad:OrigName>ItemType_Code</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>ItemType_Label</wsad:Name>
+          <wsad:OrigName>ItemType_Label</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>res_status</wsad:Name>
+          <wsad:OrigName>res_status</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+          <wsad:MetaData>
+            <wsad:FieldName>status_code</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+          <wsad:MetaData>
+            <wsad:FieldName>status_description</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>DeleteItemType</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>DeleteItemType</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>res_status</wsad:Name>
+          <wsad:OrigName>res_status</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+          <wsad:MetaData>
+            <wsad:FieldName>status_code</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+          <wsad:MetaData>
+            <wsad:FieldName>status_description</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>GetItemType</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>GetItemType</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>res_status</wsad:Name>
+          <wsad:OrigName>res_status</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+          <wsad:MetaData>
+            <wsad:FieldName>status_code</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+          <wsad:MetaData>
+            <wsad:FieldName>status_description</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>getItemType</wsad:Name>
+          <wsad:OrigName>getItemType</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>GetItemTypes</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>GetItemTypes</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>res_status</wsad:Name>
+          <wsad:OrigName>res_status</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+          <wsad:MetaData>
+            <wsad:FieldName>status_code</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+          <wsad:MetaData>
+            <wsad:FieldName>status_description</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>getItemTypes</wsad:Name>
+          <wsad:OrigName>getItemTypes</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>UpdateItemTypes</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>UpdateItemTypes</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>ItemTypeSet</wsad:Name>
+          <wsad:OrigName>ItemTypeSet</wsad:OrigName>
+          <wsad:Type>36</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+          <wsad:DataSetMetaData>
+            <wsad:NamespaceUri xsi:nil="true"/>
+            <wsad:DataTable Name="updateItemType" hasBeforeTable="false"/>
+          </wsad:DataSetMetaData>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>res_status</wsad:Name>
+          <wsad:OrigName>res_status</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+          <wsad:MetaData>
+            <wsad:FieldName>status_code</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+          <wsad:MetaData>
+            <wsad:FieldName>status_description</wsad:FieldName>
+            <wsad:Type>1</wsad:Type>
+            <wsad:Extent>0</wsad:Extent>
+            <wsad:TypeName>CHARACTER</wsad:TypeName>
+            <wsad:XmlNodeType>0</wsad:XmlNodeType>
+          </wsad:MetaData>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+  </wsad:ProcDetail>
+</wsad:Operation>
+  </pidl:binding>
+</pidl:description>

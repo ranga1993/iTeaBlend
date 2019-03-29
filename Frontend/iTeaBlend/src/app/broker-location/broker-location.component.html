@@ -1,0 +1,67 @@
+<div class="container">
+  <nav class="navbar navbar-dark bg-dark navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-nav navbar-right">
+          <input class="btn btn-primary" type="button" (click)="onLogout()" value="Logout">
+      </ul>
+    </div>
+  </nav>
+  <form #frm = "ngForm" (ngSubmit)="addBrokerLocation(frm)" *ngIf="!toggleForm">
+    <h2>Add Broker Locations</h2>
+    <div class="form-group">
+      <label for="">Broker:</label>
+      <input type="text" class="form-control" name="Broker" id="Broker" style="width:50%" ngModel required>
+    </div>
+    <div class="form-group">
+        <label for="">Broker Location Code:</label>
+        <input type="text" class="form-control" name="Broker_Location_Code" id="Broker_Location_Code" style="width:50%" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="">Location:</label>
+      <input type="text" class="form-control" name="Location" id="Location" style="width:50%" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]=frm.invalid onclick="document.getElementById('Broker').value=''; document.getElementById('Broker_Location_Code').value=''; document.getElementById('Location').value=''">Add Broker Location</button>
+  </form><br>
+  
+  <form #editForm = "ngForm" (ngSubmit)="editBrokerLocation(editForm)" *ngIf="toggleForm">
+    <h2>Edit Broker Location</h2>
+    <div class="form-group">
+      <label for="">Broker:</label>
+      <input type="text" class="form-control" name="Broker" style="width:50%" [ngModel]="selectedBrokerLocation.Broker">
+    </div>
+    <div class="form-group">
+        <label for="">Broker Location Code:</label>
+        <input type="text" class="form-control" name="Broker_Location_Code" style="width:50%" [ngModel]="selectedBrokerLocation.Broker_Location_Code">
+    </div>
+    <div class="form-group">
+      <label for="">Location:</label>
+      <input type="text" class="form-control" name="Location" style="width:50%" [ngModel]="selectedBrokerLocation.Location">
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form><br>
+  
+  <h2>Broker Locations List</h2><br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Broker</th>
+        <th>Broker Location Code</th>
+        <th>Location</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bLocation of addBrokerLocationArray[0]">
+        <td>{{bLocation.Id}}</td>
+        <td>{{bLocation.Broker}}</td>
+        <td>{{bLocation.Broker_Location_Code}}</td>
+        <td>{{bLocation.Location}}</td>
+        <td><button type="button" class="btn btn-primary" (click) = "showEditForm(bLocation)" [disabled]="toggleForm">Edit</button></td>
+        <td><button type="button" class="btn btn-danger" (click) = "deleteBrokerLocation(bLocation.Id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

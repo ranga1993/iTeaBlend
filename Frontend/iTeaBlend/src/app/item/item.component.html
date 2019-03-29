@@ -1,0 +1,57 @@
+<div class="container">
+<nav class="navbar navbar-dark bg-dark navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav"></ul>
+    <ul class="nav navbar-nav navbar-right">
+        <input class="btn btn-primary" type="button" (click)="onLogout()" value="Logout">
+    </ul>
+  </div>
+</nav>
+<form #frm = "ngForm" (ngSubmit)="addItem(frm)" *ngIf="!toggleForm">
+  <h2>Add Items</h2>
+  <div class="form-group">
+    <label for="">Item Code:</label>
+    <input type="text" class="form-control" name="Item_Code" id="Item_Code" style="width:50%" ngModel required>
+  </div>
+  <div class="form-group">
+      <label for="">Description:</label>
+      <input type="text" class="form-control" name="Description" id="Description" style="width:50%" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-success" [disabled]=frm.invalid onclick="document.getElementById('Item_Code').value=''; document.getElementById('Description').value=''">Add Item</button>
+</form><br>
+
+<form #editForm = "ngForm" (ngSubmit)="editItem(editForm)" *ngIf="toggleForm">
+  <h2>Edit Item</h2>
+  <div class="form-group">
+    <label for="">Item Code:</label>
+    <input type="text" class="form-control" name="Item_Code" style="width:50%" [ngModel]="selectedItem.Item_Code">
+  </div>
+  <div class="form-group">
+      <label for="">Description:</label>
+      <input type="text" class="form-control" name="Description" style="width:50%" [ngModel]="selectedItem.Description">
+  </div>
+  <button type="submit" class="btn btn-success">Save</button>
+</form><br>
+
+<h2>Items List</h2><br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Item Code</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of addItemArray[0]">
+      <td>{{item.Id}}</td>
+      <td>{{item.Item_Code}}</td>
+      <td>{{item.Description}}</td>
+      <td><button type="button" class="btn btn-primary" (click) = "showEditForm(item)" [disabled]="toggleForm">Edit</button></td>
+      <td><button type="button" class="btn btn-danger" (click) = "deleteItem(item.Id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

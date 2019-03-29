@@ -1,0 +1,55 @@
+<nav class="navbar navbar-dark bg-dark navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-nav navbar-right">
+          <input class="btn btn-primary" type="button" (click)="onLogout()" value="Logout">
+      </ul>
+    </div>
+  </nav>
+  <form #frm = "ngForm" (ngSubmit)="addElevation(frm)" *ngIf="!toggleForm">
+    <h2>Add Elevation</h2>
+    <div class="form-group">
+      <label for="">Elevation Code:</label>
+      <input type="text" class="form-control" name="Elevation_Code" id="Elevation_Code" style="width:50%" ngModel required>
+    </div>
+    <div class="form-group">
+        <label for="">Description:</label>
+        <input type="text" class="form-control" name="Description" id="Description" style="width:50%" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]=frm.invalid onclick="document.getElementById('Elevation_Code').value=''; document.getElementById('Description').value=''">Add Elevation</button>
+  </form><br>
+  
+  <form #editForm = "ngForm" (ngSubmit)="editElevation(editForm)" *ngIf="toggleForm">
+    <h2>Edit Elevation</h2>
+    <div class="form-group">
+      <label for="">Elevation Code:</label>
+      <input type="text" class="form-control" name="Elevation_Code" style="width:50%" [ngModel]="selectedElevation.Elevation_Code">
+    </div>
+    <div class="form-group">
+        <label for="">Description:</label>
+        <input type="text" class="form-control" name="Description" style="width:50%" [ngModel]="selectedElevation.Description">
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form><br>
+  
+  <h2>Elevation List</h2><br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Elevation Code</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let elevation of abc[0]">
+        <td>{{elevation.Id}}</td>
+        <td>{{elevation.Elevation_Code}}</td>
+        <td>{{elevation.Description}}</td>
+        <td><button type="button" class="btn btn-primary" (click) = "showEditForm(elevation)" [disabled]="toggleForm">Edit</button></td>
+        <td><button type="button" class="btn btn-danger" (click) = "deleteElevation(elevation.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>

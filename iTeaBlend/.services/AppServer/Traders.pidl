@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pidl:description targetNamespace="urn:schemas-progress-com:bpm:appserverbinding:0001" serviceType="wsad:OEAppServerInvoke" xmlns:wsad="urn:schemas-progress-com:bpm:appserverbinding:0001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pidl="http://www.progress.com/caf/idl1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:java="http://www.progress.com/adapters/idl1.0/javatype">
+<pidl:types>
+</pidl:types>
+  <pidl:interface name="com.progress.openedge.pdt.bpminterfaces">
+    <pidl:operation name="Traders..CreateTrader" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Trader_Code" req="false" type="java:String">
+    </pidl:input>
+      <pidl:input messageLabel="Trader_Name" req="false" type="java:String">
+    </pidl:input>
+      <pidl:output messageLabel="error" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Traders..DeleteTrader" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:Integer">
+    </pidl:input>
+      <pidl:output messageLabel="error" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Traders..GetTrader" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:Integer">
+    </pidl:input>
+      <pidl:output messageLabel="error" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="getTrader" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Traders..GetTraders" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:output messageLabel="error" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="getTraders" req="false" type="java:Object">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+    </pidl:operation>
+    <pidl:operation name="Traders..UpdateTrader" pattern="http://www.progress.com/caf/idl1.0/request-response">
+      <pidl:input messageLabel="Id" req="false" type="java:Integer">
+    </pidl:input>
+      <pidl:input messageLabel="traderSet" req="false" type="java:Object">
+    </pidl:input>
+      <pidl:output messageLabel="error" req="false" type="java:String">
+    </pidl:output>
+      <pidl:output messageLabel="successMessage" req="false" type="java:String">
+    </pidl:output>
+    </pidl:operation>
+  </pidl:interface>
+  <pidl:binding name="com.progress.openedge.pdt.bpmbindings" interface="wsad:com.progress.openedge.pdt.bpminterfaces" type="urn:schemas-progress-com:bpm:appserverbinding:0001">
+<wsad:Operation isPersistent="false" useFullName="false" executionMode="11">
+  <wsad:Name>Traders</wsad:Name>
+  <wsad:ProcPath/>
+  <wsad:ProPath/>
+  <wsad:ProcExt>cls</wsad:ProcExt>
+  <wsad:ProcDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="true" IsMappedToSubmit="false">
+    <wsad:Name>Traders</wsad:Name>
+    <wsad:HelpString></wsad:HelpString>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>CreateTrader</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>CreateTrader</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Trader_Code</wsad:Name>
+          <wsad:OrigName>Trader_Code</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>Trader_Name</wsad:Name>
+          <wsad:OrigName>Trader_Name</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>error</wsad:Name>
+          <wsad:OrigName>error</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="4" writeXmlBeforeImage="false">
+          <wsad:Name>successMessage</wsad:Name>
+          <wsad:OrigName>successMessage</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>DeleteTrader</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>DeleteTrader</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>4</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>error</wsad:Name>
+          <wsad:OrigName>error</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>successMessage</wsad:Name>
+          <wsad:OrigName>successMessage</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>GetTrader</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>GetTrader</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>4</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>error</wsad:Name>
+          <wsad:OrigName>error</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>getTrader</wsad:Name>
+          <wsad:OrigName>getTrader</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="4" writeXmlBeforeImage="false">
+          <wsad:Name>successMessage</wsad:Name>
+          <wsad:OrigName>successMessage</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>GetTraders</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>GetTraders</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>error</wsad:Name>
+          <wsad:OrigName>error</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>getTraders</wsad:Name>
+          <wsad:OrigName>getTraders</wsad:OrigName>
+          <wsad:Type>15</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+          <wsad:NamespaceUri xsi:nil="true"/>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>successMessage</wsad:Name>
+          <wsad:OrigName>successMessage</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+    <wsad:InternalProc isExcluded="false" hasBadParams="false">
+      <wsad:Name>UpdateTrader</wsad:Name>
+      <wsad:ProcType>1</wsad:ProcType>
+      <wsad:MethodDetail isCustomized="false" usesUnknownDefault="true" useRetVal="false" usesTTMappingDefault="true" IsTTResultSet="true" usesBeforeImageDefault="false" IsMappedToSubmit="false">
+        <wsad:Name>UpdateTrader</wsad:Name>
+        <wsad:Parameter allowUnknown="true" ordinal="1" writeXmlBeforeImage="false">
+          <wsad:Name>Id</wsad:Name>
+          <wsad:OrigName>Id</wsad:OrigName>
+          <wsad:Type>4</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="2" writeXmlBeforeImage="false">
+          <wsad:Name>traderSet</wsad:Name>
+          <wsad:OrigName>traderSet</wsad:OrigName>
+          <wsad:Type>36</wsad:Type>
+          <wsad:Mode>1</wsad:Mode>
+          <wsad:DataSetMetaData>
+            <wsad:NamespaceUri xsi:nil="true"/>
+            <wsad:DataTable Name="updateTrader" hasBeforeTable="false"/>
+          </wsad:DataSetMetaData>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="3" writeXmlBeforeImage="false">
+          <wsad:Name>error</wsad:Name>
+          <wsad:OrigName>error</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+        <wsad:Parameter allowUnknown="true" ordinal="4" writeXmlBeforeImage="false">
+          <wsad:Name>successMessage</wsad:Name>
+          <wsad:OrigName>successMessage</wsad:OrigName>
+          <wsad:Type>1</wsad:Type>
+          <wsad:Mode>2</wsad:Mode>
+        </wsad:Parameter>
+      </wsad:MethodDetail>
+    </wsad:InternalProc>
+  </wsad:ProcDetail>
+</wsad:Operation>
+  </pidl:binding>
+</pidl:description>
