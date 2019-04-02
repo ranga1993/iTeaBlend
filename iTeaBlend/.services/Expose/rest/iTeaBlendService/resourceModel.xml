@@ -77,13 +77,13 @@
   </prgs:resource>
   <prgs:resource consumes="application/json" name="_items" path="/items" produces="application/json">
     <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Items.pidl::com.progress.openedge.pdt.bpmbindings" name="Items..GetItems" produces="application/json" verb="GET"/>
-    <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Items.pidl::com.progress.openedge.pdt.bpmbindings" name="Items..CreateItem" produces="application/json" verb="POST"/>
     <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Items.pidl::com.progress.openedge.pdt.bpmbindings" name="Items..UpdateItem" produces="application/json" verb="PUT">
       <prgs:param name="Id" type="QUERY"/>
     </prgs:operation>
     <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Items.pidl::com.progress.openedge.pdt.bpmbindings" name="Items..DeleteItem" produces="application/json" verb="DELETE">
       <prgs:param name="Id" type="QUERY"/>
     </prgs:operation>
+    <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Items.pidl::com.progress.openedge.pdt.bpmbindings" name="Items..CreateItem" produces="application/json" verb="POST"/>
   </prgs:resource>
   <prgs:resource consumes="application/json" name="_itemTypes" path="/itemTypes" produces="application/json">
     <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/ItemTypes.pidl::com.progress.openedge.pdt.bpmbindings" name="ItemTypes..GetItemTypes" produces="application/json" verb="GET"/>
@@ -109,5 +109,8 @@
     <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/Broker_Locations.pidl::com.progress.openedge.pdt.bpmbindings" name="Broker_Locations..DeleteBrokerLocation" produces="application/json" verb="DELETE">
       <prgs:param name="Id" type="QUERY"/>
     </prgs:operation>
+  </prgs:resource>
+  <prgs:resource consumes="application/json" name="_elasticSearch" path="/elasticSearch" produces="application/json">
+    <prgs:operation consumes="application/json" idls="iTeaBlend/.services/AppServer/ElasticSearch.pidl::com.progress.openedge.pdt.bpmbindings" name="ElasticSearch..GetElasticSearches" produces="application/json" verb="GET"/>
   </prgs:resource>
 </prgs:model>

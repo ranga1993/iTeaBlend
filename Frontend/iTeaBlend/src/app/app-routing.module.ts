@@ -7,10 +7,12 @@ import { LoginComponent } from './login/login.component';
 import { ElevationComponent } from './elevation/elevation.component';
 import { ItemComponent } from './item/item.component';
 import { BrokerLocationComponent } from './broker-location/broker-location.component';
+import { ElasticSearchComponent } from './elastic-search/elastic-search.component';
 
 const routes: Routes = [
   {path: 'item', component: ItemComponent},
   {path: 'brokerLocation', component: BrokerLocationComponent},
+  {path: 'elasticSearch', component: ElasticSearchComponent},
   {path: 'elevation', component: ElevationComponent},
   {path: 'login', component: LoginComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'}

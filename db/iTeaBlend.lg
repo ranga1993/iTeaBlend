@@ -7925,3 +7925,125 @@
 [2019/03/29@09:28:02.183+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
 [2019/03/29@09:28:02.183+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to rangaa@windowsid. 
 [2019/03/29@09:29:31.192+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid rangaa@windowsid, on Rangaa. 
+[2019/03/29@10:33:20.855+2300] P-11312      T-10752 I TSRV    2: (794)   Usernum 23 terminated abnormally. 
+[2019/03/29@10:33:20.855+2300] P-11312      T-10752 I TSRV    2: (739)   Logout usernum 23, userid rangaa@windowsid, on Rangaa. 
+[2019/03/29@10:33:22.251+2300] P-11820      T-12556 I SQLSRV2 1: (19201) Logout by user 24.
+[2019/03/29@10:33:22.251+2300] P-11820      T-12556 I SQLSRV2 1: (453)   Logout by rangaa on  . 
+[2019/03/29@10:34:39.514+2300] P-11312      T-10752 I TSRV    2: (742)   Login usernum 24, userid rangaa client type ABL , on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:34:39.514+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 24 set name to rangaa. 
+[2019/03/29@10:34:39.514+2300] P-11312      T-10752 I TSRV    2: (17961) User 24 set tty to Rangaa. 
+[2019/03/29@10:34:39.543+2300] P-11312      T-10752 I TSRV    2: (15914) Usr 24 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:34:39.543+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 24 set name to rangaa@windowsid. 
+[2019/03/29@10:34:44.950+2300] P-11820      T-3664  I SQLSRV2 1: (8873)  Login usernum 23, remote SQL client. 
+[2019/03/29@10:34:44.950+2300] P-11820      T-3664  I SQLSRV2 1: (7129)  Usr 23 set name to rangaa. 
+[2019/03/29@10:34:44.951+2300] P-11820      T-3664  I SQLSRV2 1: (19205) SQLLockWaitTimeout 5 
+[2019/03/29@10:34:44.951+2300] P-11820      T-3664  I SQLSRV2 1: (15914) Usr 23 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:34:44.952+2300] P-11820      T-3664  I SQLSRV2 1: (19198) Login by user 23. Using TCP/IP IPV4 address 127.0.0.1
+[2019/03/29@10:34:45.473+2300] P-11820      T-3664  I SQLSRV2 1: (19201) Logout by user 23.
+[2019/03/29@10:34:45.474+2300] P-11820      T-3664  I SQLSRV2 1: (453)   Logout by rangaa on  . 
+[2019/03/29@10:35:21.276+2300] P-11820      T-10660 I SQLSRV2 1: (8873)  Login usernum 23, remote SQL client. 
+[2019/03/29@10:35:21.277+2300] P-11820      T-10660 I SQLSRV2 1: (7129)  Usr 23 set name to rangaa. 
+[2019/03/29@10:35:21.277+2300] P-11820      T-10660 I SQLSRV2 1: (19205) SQLLockWaitTimeout 5 
+[2019/03/29@10:35:21.277+2300] P-11820      T-10660 I SQLSRV2 1: (15914) Usr 23 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:35:21.278+2300] P-11820      T-10660 I SQLSRV2 1: (19198) Login by user 23. Using TCP/IP IPV4 address 127.0.0.1
+[2019/03/29@10:39:19.955+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASA, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:39:19.955+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@10:39:19.955+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@10:39:20.131+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:39:20.132+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@10:39:20.151+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@10:39:20.415+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:39:20.415+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@10:39:20.415+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@10:39:20.436+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:39:20.436+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@10:39:20.898+2300] P-11648      T-1464  I TSRV    4: (452)   Login by SYSTEM on CON:. 
+[2019/03/29@10:39:20.950+2300] P-11648      T-1464  I TSRV    4: (5646)  Started on port 3005 using TCP IPV4 address 0.0.0.0, pid 11648. 
+[2019/03/29@10:39:21.869+2300] P-11648      T-12780 I TSRV    4: (742)   Login usernum 21, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:39:21.869+2300] P-11648      T-12780 I TSRV    4: (7129)  Usr 21 set name to SYSTEM. 
+[2019/03/29@10:39:21.869+2300] P-11648      T-12780 I TSRV    4: (17961) User 21 set tty to Rangaa. 
+[2019/03/29@10:39:21.888+2300] P-11648      T-12780 I TSRV    4: (15914) Usr 21 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:39:21.888+2300] P-11648      T-12780 I TSRV    4: (7129)  Usr 21 set name to SYSTEM@windowsid. 
+[2019/03/29@10:39:45.337+2300] P-11648      T-12780 I TSRV    4: (739)   Logout usernum 21, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@10:39:45.355+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@10:40:28.295+2300] P-11312      T-10752 I TSRV    2: (794)   Usernum 24 terminated abnormally. 
+[2019/03/29@10:40:28.296+2300] P-11312      T-10752 I TSRV    2: (739)   Logout usernum 24, userid rangaa@windowsid, on Rangaa. 
+[2019/03/29@10:40:29.547+2300] P-11820      T-10660 I SQLSRV2 1: (19201) Logout by user 23.
+[2019/03/29@10:40:29.547+2300] P-11820      T-10660 I SQLSRV2 1: (453)   Logout by rangaa on  . 
+[2019/03/29@10:41:01.701+2300] P-11820      T-8880  I SQLSRV2 1: (8873)  Login usernum 24, remote SQL client. 
+[2019/03/29@10:41:01.702+2300] P-11820      T-8880  I SQLSRV2 1: (7129)  Usr 24 set name to rangaa. 
+[2019/03/29@10:41:01.702+2300] P-11820      T-8880  I SQLSRV2 1: (19205) SQLLockWaitTimeout 5 
+[2019/03/29@10:41:01.703+2300] P-11820      T-8880  I SQLSRV2 1: (15914) Usr 24 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:41:01.703+2300] P-11820      T-8880  I SQLSRV2 1: (19198) Login by user 24. Using TCP/IP IPV4 address 127.0.0.1
+[2019/03/29@10:41:09.378+2300] P-11312      T-10752 I TSRV    2: (742)   Login usernum 23, userid rangaa client type ABL , on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:41:09.378+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa. 
+[2019/03/29@10:41:09.378+2300] P-11312      T-10752 I TSRV    2: (17961) User 23 set tty to Rangaa. 
+[2019/03/29@10:41:09.400+2300] P-11312      T-10752 I TSRV    2: (15914) Usr 23 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:41:09.400+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa@windowsid. 
+[2019/03/29@10:53:35.466+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:53:35.467+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@10:53:35.467+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@10:53:35.487+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:53:35.487+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@10:54:30.432+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@10:54:44.876+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@10:54:44.877+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@10:54:44.877+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@10:54:44.902+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@10:54:44.902+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@10:56:07.069+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@11:39:58.457+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@11:39:58.457+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@11:39:58.458+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@11:39:58.479+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@11:39:58.479+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@11:41:08.922+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@12:03:32.654+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@12:03:32.654+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@12:03:32.654+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@12:03:32.674+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@12:03:32.675+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@12:11:25.741+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@14:17:10.246+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@14:17:10.246+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@14:17:10.247+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@14:17:10.274+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@14:17:10.275+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@14:34:17.924+2300] P-8324       T-7044  I TSRV    3: (739)   Logout usernum 22, userid SYSTEM@windowsid, on Rangaa. 
+[2019/03/29@15:56:53.491+2300] P-8324       T-7044  I TSRV    3: (742)   Login usernum 22, userid SYSTEM client type PASN, on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/03/29@15:56:53.491+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM. 
+[2019/03/29@15:56:53.492+2300] P-8324       T-7044  I TSRV    3: (17961) User 22 set tty to Rangaa. 
+[2019/03/29@15:56:53.511+2300] P-8324       T-7044  I TSRV    3: (15914) Usr 22 set tenant-id to 0, tenant-name to Default 
+[2019/03/29@15:56:53.511+2300] P-8324       T-7044  I TSRV    3: (7129)  Usr 22 set name to SYSTEM@windowsid. 
+[2019/03/29@16:57:34.490+2300] P-11312      T-10752 I TSRV    2: (794)   Usernum 23 terminated abnormally. 
+[2019/03/29@16:57:34.491+2300] P-11312      T-10752 I TSRV    2: (739)   Logout usernum 23, userid rangaa@windowsid, on Rangaa. 
+[2019/03/29@16:57:35.908+2300] P-11820      T-8880  I SQLSRV2 1: (19201) Logout by user 24.
+[2019/03/29@16:57:35.908+2300] P-11820      T-8880  I SQLSRV2 1: (453)   Logout by rangaa on  . 
+[2019/04/01@07:56:59.212+2300] P-11820      T-1944  I SQLSRV2 1: (8873)  Login usernum 24, remote SQL client. 
+[2019/04/01@07:56:59.213+2300] P-11820      T-1944  I SQLSRV2 1: (7129)  Usr 24 set name to rangaa. 
+[2019/04/01@07:56:59.213+2300] P-11820      T-1944  I SQLSRV2 1: (19205) SQLLockWaitTimeout 5 
+[2019/04/01@07:56:59.243+2300] P-11820      T-1944  I SQLSRV2 1: (15914) Usr 24 set tenant-id to 0, tenant-name to Default 
+[2019/04/01@07:56:59.243+2300] P-11820      T-1944  I SQLSRV2 1: (19198) Login by user 24. Using TCP/IP IPV4 address 127.0.0.1
+
+                Mon Apr  1 07:57:10 2019
+[2019/04/01@07:57:10.277+2300] P-11312      T-10752 I TSRV    2: (742)   Login usernum 23, userid rangaa client type ABL , on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/04/01@07:57:10.277+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa. 
+[2019/04/01@07:57:10.277+2300] P-11312      T-10752 I TSRV    2: (17961) User 23 set tty to Rangaa. 
+[2019/04/01@07:57:10.548+2300] P-11312      T-10752 I TSRV    2: (15914) Usr 23 set tenant-id to 0, tenant-name to Default 
+[2019/04/01@07:57:10.548+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa@windowsid. 
+[2019/04/01@16:43:52.364+2300] P-11312      T-10752 I TSRV    2: (794)   Usernum 23 terminated abnormally. 
+[2019/04/01@16:43:52.383+2300] P-11312      T-10752 I TSRV    2: (739)   Logout usernum 23, userid rangaa@windowsid, on Rangaa. 
+[2019/04/01@16:43:54.387+2300] P-11820      T-1944  I SQLSRV2 1: (19201) Logout by user 24.
+[2019/04/01@16:43:54.388+2300] P-11820      T-1944  I SQLSRV2 1: (453)   Logout by rangaa on  . 
+[2019/04/02@08:09:50.521+2300] P-11820      T-7000  I SQLSRV2 1: (8873)  Login usernum 24, remote SQL client. 
+[2019/04/02@08:09:50.522+2300] P-11820      T-7000  I SQLSRV2 1: (7129)  Usr 24 set name to rangaa. 
+[2019/04/02@08:09:50.522+2300] P-11820      T-7000  I SQLSRV2 1: (19205) SQLLockWaitTimeout 5 
+[2019/04/02@08:09:50.522+2300] P-11820      T-7000  I SQLSRV2 1: (15914) Usr 24 set tenant-id to 0, tenant-name to Default 
+[2019/04/02@08:09:50.522+2300] P-11820      T-7000  I SQLSRV2 1: (19198) Login by user 24. Using TCP/IP IPV4 address 127.0.0.1
+
+                Tue Apr  2 08:10:04 2019
+[2019/04/02@08:10:04.725+2300] P-11312      T-10752 I TSRV    2: (742)   Login usernum 23, userid rangaa client type ABL , on Rangaa using TCP/IP IPV4 address 127.0.0.1. 
+[2019/04/02@08:10:04.725+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa. 
+[2019/04/02@08:10:04.725+2300] P-11312      T-10752 I TSRV    2: (17961) User 23 set tty to Rangaa. 
+[2019/04/02@08:10:05.140+2300] P-11312      T-10752 I TSRV    2: (15914) Usr 23 set tenant-id to 0, tenant-name to Default 
+[2019/04/02@08:10:05.140+2300] P-11312      T-10752 I TSRV    2: (7129)  Usr 23 set name to rangaa@windowsid. 

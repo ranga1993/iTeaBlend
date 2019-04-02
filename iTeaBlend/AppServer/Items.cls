@@ -9,14 +9,21 @@ CLASS Items:
     DEFINE TEMP-TABLE getItems LIKE Items.
     DEFINE TEMP-TABLE getItem LIKE Items.
     DEFINE TEMP-TABLE updateItem LIKE Items.
+    DEFINE TEMP-TABLE addElasticSearch LIKE ElasticSearch.
     
     //Define Temporary Table called res_status
     DEFINE TEMP-TABLE res_status NO-UNDO  
         FIELD status_code AS CHARACTER FORMAT "x(36)" 
         FIELD status_description AS CHARACTER FORMAT "x(100)".
+        
+/*    DEFINE TEMP-TABLE search_result NO-UNDO            */
+/*        FIELD Id AS CHARACTER FORMAT "x(100)"          */
+/*        FIELD Item_Code AS CHARACTER FORMAT "x(100)"   */
+/*        FIELD Description AS CHARACTER FORMAT "x(100)".*/
     
     /* Define a dataset for Grade to work with update operation */
     DEFINE DATASET ItemSet FOR updateItem.
+    
 
     //CreateItem Method
     @openapi.openedge.export(type="REST", useReturnValue="false", writeDataSetBeforeImage="false").
@@ -25,6 +32,9 @@ CLASS Items:
         //Create the temporary table called addItem
         CREATE addItem.
         
+        //Create the temporary table called addElasticSearch
+        CREATE addElasticSearch.
+        
         //Empty the Temporary Table called res_status
         EMPTY TEMP-TABLE res_status.
         
@@ -32,10 +42,21 @@ CLASS Items:
         ASSIGN 
             addItem.Item_Code = Item_Code
             addItem.Description = Description
-            addItem.Id = BASE64-ENCODE(GENERATE-UUID). //Calling the GENERATE-UUID function to assign Id to Items
-        
+            addItem.Id = GUID(GENERATE-UUID) //Calling the GENERATE-UUID function to assign Id to Items
+/*            search_result.Id = addItem.Id          */
+/*            search_result.Item_Code = Item_Code    */
+/*            search_result.Description = Description*/
+            addElasticSearch.GUID = addItem.Id
+            addElasticSearch.APP = "iTeaBlend"
+            addElasticSearch.TYPE = "Items"
+            addElasticSearch.JSON = STRING(addItem.Id) + ',' + STRING(addItem.Item_Code) + ',' + STRING(addItem.Description).
+/*            addElasticSearch.JSON = addElasticSearch.JSON:WRITE-JSON (addItem.Id, Item_Code, Description).*/
+/*            addElasticSearch.JSON = STRING(addItem.Id) + ',' + STRING(addItem.Item_Code) + ',' + STRING(addItem.Description).*/
+            
         //Copy contents of tempory table addItem to Items table    
         BUFFER-COPY addItem TO Items.
+            
+        BUFFER-COPY addElasticSearch TO ElasticSearch.
         
         CREATE res_status. //Create the temporary table called res_status
         

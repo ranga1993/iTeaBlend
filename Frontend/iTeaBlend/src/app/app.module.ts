@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ElevationComponent } from './elevation/elevation.component';
 import { ItemComponent } from './item/item.component';
 import { BrokerLocationComponent } from './broker-location/broker-location.component';
+import { ElasticSearchComponent } from './elastic-search/elastic-search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrokerLocationComponent } from './broker-location/broker-location.compo
     LoginComponent,
     ElevationComponent,
     ItemComponent,
-    BrokerLocationComponent
+    BrokerLocationComponent,
+    ElasticSearchComponent
   ],
   imports: [
     BrowserModule,
